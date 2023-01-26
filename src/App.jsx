@@ -1,9 +1,17 @@
 import Container from './components/Container'
 
-export function App() {
+export const App = () => {
   return (
     <Container>
-      <h1 className='bg-blue-500'>Hello world!</h1>
+      <h1
+        className='
+        w-full
+        bg-blue-500
+        text-center
+      '
+      >
+        Hello world!
+      </h1>
     </Container>
   )
 }
