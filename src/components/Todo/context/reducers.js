@@ -30,7 +30,7 @@ export const taskReducer = (state, action) => {
     case 'COMPLETE_TASK': {
       return {
         ...state,
-        list: completeTask(state.list, action.id)
+        list: completeTask(state.list, action.id, action.completed)
       }
     }
   }

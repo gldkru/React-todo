@@ -1,3 +1,1 @@
-export const removeTask = (list, removedId) => {
-  return list.filter((task) => task.taskId !== removedId)
-}
+export const removeTask = (list, removedId) => list.filter((task) => task.id !== removedId)

@@ -1,9 +1,9 @@
-export const completeTask = (list, completedTaskId) => {
+export const completeTask = (list, completedTaskId, completed) => {
   return list.map((task) => {
-    if (task.taskId === completedTaskId.taskId) {
+    if (task.id === completedTaskId) {
       return {
         ...task,
-        completed: !task.completed
+        completed
       }
     }
 

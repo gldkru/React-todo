@@ -1,6 +1,6 @@
 export const editTask = (list, updatedTask) => {
   return list.map((task) => {
-    if (task.taskId === updatedTask.taskId) {
+    if (task.id === updatedTask.id) {
       return updatedTask
     }
 
