@@ -1,10 +1,9 @@
-import { useContext } from 'react'
-import { TasksContext } from '../context'
+import { useTasksList } from '../context'
 
 // Doc: https://react.dev/reference/react/Children#calling-a-render-prop-to-customize-rendering
 
 export const List = ({ renderItem, className }) => {
-  const { list } = useContext(TasksContext)
+  const list = useTasksList()
 
   return (
     list &&

@@ -1,10 +1,9 @@
-import { useContext } from 'react'
-import { DispatchTasksContext } from '../context'
+import { useTasksDispatch } from '../context'
 import { Button } from '../../ui/Button'
 import { RemoveIcon } from '../../ui/icons/Remove'
 
 export const Task = ({ name, id, completed }) => {
-  const dispatchTasks = useContext(DispatchTasksContext)
+  const dispatchTasks = useTasksDispatch()
 
   const handleCompleted = (e) => {
     dispatchTasks({

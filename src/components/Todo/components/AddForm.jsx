@@ -1,11 +1,11 @@
-import { useContext, useState } from 'react'
+import { useState } from 'react'
 import { Button } from '../../ui/Button'
 import { PlusIcon } from '../../ui/icons/Plus'
-import { DispatchTasksContext } from '../context'
+import { useTasksDispatch } from '../context'
 
 export const AddForm = () => {
   const [taskName, setTaskName] = useState('')
-  const dispatchTasks = useContext(DispatchTasksContext)
+  const dispatchTasks = useTasksDispatch()
 
   const handleSubmit = (e) => {
     e.preventDefault()
