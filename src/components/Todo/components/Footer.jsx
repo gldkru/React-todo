@@ -1,3 +1,3 @@
 export const Footer = ({ children }) => {
-  return <div className='px-6 pb-5 text-center '>{children}</div>
+  return <div className='p-5 text-center '>{children}</div>
 }

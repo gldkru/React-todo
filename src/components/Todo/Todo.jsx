@@ -1,5 +1,5 @@
 import { useReducer } from 'react'
-import { List, Task, Counter, Content, Header, Footer, AddForm, Empty } from './components'
+import { List, Task, Counter, Content, Header, Footer, AddForm } from './components'
 import { initialState, taskReducer, TasksContext, DispatchTasksContext } from './context'
 
 export const Todo = () => {
@@ -12,7 +12,7 @@ export const Todo = () => {
           <Header>
             <AddForm />
           </Header>
-          <List renderItem={(task) => <Task {...task} key={task.id} />} renderEmpty={() => <Empty />} />
+          <List className='px-6 pt-6' renderItem={(task) => <Task {...task} key={task.id} />} />
           <Footer>
             <Counter />
           </Footer>
