@@ -91,7 +91,7 @@ export const App = () => {
           </label>
         </div>
         {/* Footer */}
-        <div className='px-6 pb-5 text-center'>123</div>
+        <div className='px-6 pb-5 text-center text-sm text-gray-400'>Сделано 1 из 3</div>
       </div>
     </Container>
   )
