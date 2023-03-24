@@ -3,7 +3,7 @@ import Container from './components/Container'
 export const App = () => {
   return (
     <Container>
-      <div className='m-auto max-w-xl overflow-hidden rounded-2xl bg-white shadow-xl'>
+      <div className='m-auto w-full max-w-xl overflow-hidden rounded-2xl bg-white shadow-xl'>
         {/* Header */}
         <div className='bg-blue-50 px-6 py-5'>
           {/* Task add form */}
